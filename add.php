@@ -8,7 +8,7 @@
     <body>
             <h1>테스트 사이트 입니다</h2>
             
-            <form action = "singup_check.php" method="POST">
+            <form action = "signup_check.php" method="POST">
                     <input type="text" name="id">
                     <input type="text" name="name">
                     <input type="number" name="pw">
