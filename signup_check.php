@@ -10,7 +10,6 @@
     $name = $_POST['name'];
     $id = $_POST['id'];
 
-    $q = mysqli_query($mysqli,"INSERT INTO user_data(id,username,userpw) VALUES('$id', '$name', '$pw')");
-
+    $q = mysqli_query($mysqli,"INSERT INTO user_info(id,name,pw) VALUES('$id', '$name', '$pw')");
 
 ?>
