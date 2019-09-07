@@ -29,21 +29,29 @@
                 <br>
                 <br>
                 <div class="container">
-            <h2>회원가입</h2>
+            <h3>회원가입</h3>
 
+            <br>
             <form action = "signup_check.php" method="POST">
-
-                <p>사용자 이름</p>
-                    <input type="text" name="name">
-                    <br>
-                <p>아이디:</p>
-                    <input type="text" name="id">
-                    <br>
-                <p>비밀번호:</p>
-                    <input type="number" name="pw">
+                <div class="card">
+                    <div class="row">
+                            <p>사용자 이름</p>
+                            <input type="text" name="name">
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                                <p>아이디:</p>
+                                <input type="text" name="id">
+                        </div>
+                        <div class="col s6">
+                                <p>비밀번호:</p>
+                                <input type="number" name="pw">
+                        </div>
+                    </div>
+                </div>
                     <br>
                     <button type="submit" value="가입하기">가입하기</button>
-
+                
             </form>
             </div>
 			<!--JavaScript at end of body for optimized loading-->
