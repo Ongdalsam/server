@@ -24,8 +24,9 @@
             </ul>
       </div>
     </nav>
+    <div class="container">
     <form method='POST' action='login_check.php'>
-        <table>
+        <!--<table>
             <tr>
                 <td>아이디</td>
                 <td><input type='text' name='id' tabindex='1'/></td>
@@ -35,12 +36,38 @@
                 <td>비밀번호</td>
                 <td><input type='number' name='pw' tabindex='2'/></td>
             </tr>
-        </table>
-    
+        </table>-->
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="id" type="text" name='id' class="validate">
+                <label for="id">ID</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="pw" type="number" name='pw' class="validate">
+                <label for="pw">Password</label>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s4 offset-s4">
+                <a type='submit' class="waves-effect waves-light btn">login</a>
+            </div>
+        </div>
     </form>
-    <a href="signup.html" target="right">
-        <button>회원가입 하러가기</button>
-    </a>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s6 offset-s3">
+            <a href="signup.html" target="right">
+                <a class="waves-effect waves-light btn">sign up</a>
+            </a>
+        </div>
+    </div>   
+
+</div>
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
