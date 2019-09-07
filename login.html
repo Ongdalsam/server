@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<meta charset="utf-8" />
-<form method='POST' action='login_check.php'>
-    <table>
-        <tr>
-            <td>아이디</td>
-            <td><input type='text' name='id' tabindex='1'/></td>
-            <td rowspan='2'><input type='submit' tabindex='3' value='로그인' style='height:50px'/></td>
-        </tr>
-        <tr>
-            <td>비밀번호</td>
-            <td><input type='number' name='pw' tabindex='2'/></td>
-        </tr>
-    </table>
+<head>
+    <meta charset="utf-8" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-</form>
-<a href="signup.html" target="right">
-    <button>회원가입 하러가기</button>
-</a>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+     <nav>
+        <div class="nav-wrapper"> 
+           <a href="#" class="brand-logo" style="padding-left: 20px;">Messy Math</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                     <li><a href="https://www.facebook.com/profile.php?id=100015121937431">송정훈</a></li>
+            </ul>
+      </div>
+    </nav>
+    <form method='POST' action='login_check.php'>
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td><input type='text' name='id' tabindex='1'/></td>
+                <td rowspan='2'><input type='submit' tabindex='3' value='로그인' style='height:50px'/></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type='number' name='pw' tabindex='2'/></td>
+            </tr>
+        </table>
+    
+    </form>
+    <a href="signup.html" target="right">
+        <button>회원가입 하러가기</button>
+    </a>
+</body>
