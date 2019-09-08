@@ -68,7 +68,7 @@
                 <div class="card">
                     <span class = "card-title">당신의 총 시도 횟수는 :</span>
                     <p>
-                    <?php echo "$total 입니다"; ?>
+                    <?php echo "$total 번 입니다"; ?>
                     </p>
                 </div>
             </div>  
@@ -77,7 +77,7 @@
                     <span class = "card-title">당신의 정답률은 :</span>
                     <p>
                     <?php echo $correct / $total * 100;
-                          echo "% 입니다";
+                          echo "% 번 입니다";
                     ?>
                     </p>
                 </div>
