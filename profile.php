@@ -38,7 +38,7 @@
 		</nav>
 
         <div class="container">
-            <h3>Chech your profile</h3>
+            <h3>Check your profile</h3>
             <br>
             <div class="row">
                 <div class="card">
