@@ -44,7 +44,6 @@
                     <br>
                 </div>
             </div>
-            <br>
             <form action = "answer_check.php" method="POST">
                 <div class="row">
                     <div class="input-field col s6">
