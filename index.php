@@ -106,20 +106,22 @@ body, html {
 					</div>
 				</div>
 				-->
-				<body onload="printClock()">
-				<div style="border:1px solid #dedede; width:600px; height:250px; line-height:250px; color:#666;font-size:100px; text-align:center;" id="clock">
-				</div>
 				<div class="row">
-				<div class="col s6 offset-s3">
-				<div class="card blue-grey darken-1">
-        		<div class="card-content white-text">
-					<span class="card-title">Messy Math</span>
-					<p>
-						A math problem bank to help you get an A on math exams
-					</p>
-				</div>
-				</div>
-				</div>
+					<div class="col s7">
+						<body onload="printClock()">
+						<div style="border:1px solid #dedede; width:600px; height:250px; line-height:250px; color:#666;font-size:100px; text-align:center;" id="clock">
+						</div>
+					</div>
+					<div class="col s5">
+						<div class="card blue-grey darken-1">
+        					<div class="card-content white-text">
+								<span class="card-title">Messy Math</span>
+								<p>
+								A math problem bank to help you get an A on math exams
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 				
