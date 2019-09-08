@@ -31,12 +31,7 @@
               </div>
 		</nav>
         <div class="container">
-            <?php
-            for($i = 0; $row1=mysql_fetch_array($sql1); $i++) {
-                echo $row1[ranking];
-                <br>
-            }
-            ?>
+            <h3> 순위는 제일 쓸모없는 숫자입니다. 우리 모두 남과 비교하기보다는 모두가 1등이 되려고 노력합시다. </h3>
         </div>
         <!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
