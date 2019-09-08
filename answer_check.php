@@ -25,7 +25,7 @@
         $_SESSION['correct'] = $_SESSION['correct'] + 1;
         $_SESSION['total'] = $_SESSION['total'] + 1;
         $look = "UPDATE user_info SET correct = $_SESSION['correct'], total = $_SESSION['total'] WHERE id = '$id'";
-        $mysqli->query($look);
+        $result=$mysqli->query($look); 
         ?>
         <script type="text/javascript">
             alert('맞았습니다!');
@@ -37,7 +37,7 @@
     {
         $_SESSION['total'] = $_SESSION['total'] + 1;
         $look = "UPDATE user_info SET total = $_SESSION['total'] WHERE id = '$id'";
-        $mysqli->query($look);
+        $result=$mysqli->query($look);
         ?>
         <script type="text/javascript">
             alert('틀렸습니다!');
