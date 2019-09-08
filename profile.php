@@ -77,7 +77,7 @@
                     <span class = "card-title">당신의 정답률은 :</span>
                     <p>
                     <?php echo $correct / $total * 100;
-                          echo "% 번 입니다";
+                          echo "% 입니다";
                     ?>
                     </p>
                 </div>
