@@ -46,18 +46,7 @@
                     <?php echo "$id 입니다"; ?>
                     </p>
                 </div>
-                <div class="card">
-                    <span class = "card title">당신의 맞은 개수는 :</span>
-                    <p>
-                    <?php echo "$correct 입니다"; ?>
-                    </p>
-                </div>
-                <div class="card">
-                    <span class = "card title">당신의 정답률은 :</span>
-                    <p>
-                    <?php echo "$correct / $total 입니다"; ?>
-                    </p>
-                </div>
+                
             </div>
             <br>
         </div>
