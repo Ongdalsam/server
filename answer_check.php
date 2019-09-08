@@ -33,12 +33,12 @@
         //$_SESSION['correct'] = $_SESSION['correct'] + 1;
         //$_SESSION['total'] = $_SESSION['total'] + 1;
         echo "Hello!";
-        /*$sql = "UPDATE user_info SET correct = $_SESSION['correct'], total = $_SESSION['total'] WHERE id = '$id'";
+        $sql = "UPDATE user_info SET correct = $_SESSION['correct'], total = $_SESSION['total'] WHERE id = '$id'";
         if ($mysqli->query($sql) === TRUE) {
             echo "Record updated successfully";
         } else {
             echo "Error updating record: " . $mysqli->error;
-        }*/
+        }
 
         ?>
         <!--<script type="text/javascript">
