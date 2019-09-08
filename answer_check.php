@@ -14,7 +14,7 @@
         $row=$result->fetch_array(MYSQLI_ASSOC);
     }*/
 
-    echo "$_SESSION['prob_num']";
+    echo "$answer";
 
     if($_SESSION['prob_num']==1)
     {
