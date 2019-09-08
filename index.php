@@ -49,7 +49,7 @@
 				<h4>About</h4>
 
 				<div class="row">
-				<div class="col s6">
+				<div class="col s6 offset-s3">
 				<div class="card blue-grey darken-1">
         		<div class="card-content white-text">
 					<span class="card-title">Messy Math</span>
