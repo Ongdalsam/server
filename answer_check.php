@@ -14,8 +14,6 @@
         $row=$result->fetch_array(MYSQLI_ASSOC);
     }*/
 
-    echo "$answer";
-
     if($_SESSION['prob_num']==1)
     {
         if($answer==24)
@@ -29,7 +27,6 @@
     {
 
     }
-    echo "$check";
 
     /*if($check==1)
     {

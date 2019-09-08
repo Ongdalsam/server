@@ -21,7 +21,8 @@
     <body>
         <?php
 
-        $_SESSION['prob_num']=1;
+        $_SESSION['prob_num'] = 1;
+        echo "$_SESSION['prob_num']";
 
         ?>
         <nav>
