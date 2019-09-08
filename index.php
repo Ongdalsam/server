@@ -43,7 +43,7 @@
 				<br>
 
 			<div class="container">
-				<?php echo "<h3>안녕하세요. $name($id)님</h3>"; ?>
+				<?php echo "<h3>안녕하세요. $name 님</h3>"; ?>
 				<br>
 				<br>
 				<div class="row">
