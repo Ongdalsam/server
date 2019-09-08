@@ -28,7 +28,7 @@
 
     }
 
-    if($check==1)
+    /*if($check==1)
     {
         $_SESSION['correct'] = $_SESSION['correct'] + 1;
         $_SESSION['total'] = $_SESSION['total'] + 1;
@@ -62,5 +62,5 @@
             window.location = 'problem_list.php';
         </script>-->
         <?php
-    }
+    }*/
 ?>
