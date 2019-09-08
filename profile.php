@@ -19,6 +19,12 @@
     </head>
 
     <body>
+    <?php
+        $id = $_SESSION['id'];
+        $name = $_SESSION['name'];
+        $correct = $_SESSION['correct'];
+	    $total = $_SESSION['total'];
+	?>
         <nav>
             <div class="nav-wrapper"> 
                    <a href="https://ongdalsam.herokuapp.com/index.php" class="brand-logo" style="padding-left: 20px;">Messy Math</a>
