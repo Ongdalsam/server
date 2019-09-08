@@ -47,11 +47,16 @@
 				<br>
 				<br>
 				<h4>About</h4>
-				<div class="card">
+
+				<div class="col s6">
+				<div class="card blue-grey darken-1">
+        		<div class="card-content white-text">
 					<span class="card-title">Messy Math</span>
 					<p>
 						A math problem bank to help you get an A on math exams
 					</p>
+				</div>
+				</div>
 				</div>
 			</div>
 				
