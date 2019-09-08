@@ -39,9 +39,22 @@
 								 <li><a href="logout.php">Logout</a></li>
                         </ul>
                   </div>
-                </nav>
-			
-				<?php echo "<p>안녕하세요. $name($id)님</p>"; ?>
+				</nav>
+				<br>
+
+			<div class="container">
+				<?php echo "<h3>안녕하세요. $name($id)님</h3>"; ?>
+				<br>
+				<br>
+				<h4>About</h4>
+				<div class="card">
+					<span class="card-title">Messy Math</span>
+					<p>
+						A math problem bank to help you get an A on math exams
+					</p>
+				</div>
+			</div>
+				
 		
 		<!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
