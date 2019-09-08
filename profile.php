@@ -68,7 +68,9 @@
                 <div class="card">
                     <span class = "card-title">당신의 정답률은 :</span>
                     <p>
-                    <?php echo $correct / $total * 100 "% 입니다"; ?>
+                    <?php echo $correct / $total * 100;
+                          echo "% 입니다";
+                    ?>
                     </p>
                 </div>
             </div>
