@@ -56,62 +56,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">4. 넓이 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">5. 길이 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">6. 미분 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">7. 사칙연산 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">8. 기하 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">9. 정수 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">10. 조합 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!--JavaScript at end of body for optimized loading-->
