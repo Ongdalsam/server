@@ -2,6 +2,8 @@
     session_start();
     require('db.php');
 
+    echo "Hello!!!!";
+
     $answer = $_POST['answer'];
     $id = $_SESSION['id'];
     $check = 0;
