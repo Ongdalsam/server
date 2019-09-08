@@ -46,8 +46,12 @@
 				<?php echo "<h3>안녕하세요. $name($id)님</h3>"; ?>
 				<br>
 				<br>
-				<h4>About</h4>
-
+				<div class="row">
+					<div class="col s6 offset-s3">
+						<h4>About</h4>
+					</div>
+				</div>
+				
 				<div class="row">
 				<div class="col s6 offset-s3">
 				<div class="card blue-grey darken-1">
