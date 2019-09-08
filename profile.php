@@ -31,22 +31,39 @@
 		</nav>
 
         <div class="container">
-            <?php echo "<h3>"Chech your profile"</h3>"; ?>
+            <h3>Chech your profile</h3>
             <br>
             <div class="row">
                 <div class="card">
-                    <span class = "card title">당신의 이름은 :</span>
+                    <span class = "card-title">당신의 이름은 :</span>
                     <p>
                     <?php echo "$name 입니다"; ?>
                     </p>
                 </div>
+            </div>  
+            <div class="row">
                 <div class="card">
-                    <span class = "card title">당신의 아이디는 :</span>
+                    <span class = "card-title">당신의 아이디는 :</span>
                     <p>
                     <?php echo "$id 입니다"; ?>
                     </p>
                 </div>
-                
+            </div>
+            <div class="row">
+                <div class="card">
+                    <span class = "card-title">당신의 맞은 개수는 :</span>
+                    <p>
+                    <?php echo "$correct 입니다"; ?>
+                    </p>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="card">
+                    <span class = "card-title">당신의 정답률은 :</span>
+                    <p>
+                    <?php echo "$correct / $total 입니다"; ?>
+                    </p>
+                </div>
             </div>
             <br>
         </div>
@@ -54,4 +71,4 @@
         <!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
     </body>
-</html>
+</html> 
