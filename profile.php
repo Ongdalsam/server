@@ -60,7 +60,7 @@
                 <div class="card">
                     <span class = "card-title">당신의 맞은 횟수는 :</span>
                     <p>
-                    <?php echo "$correct 입니다"; ?>
+                    <?php echo "$correct 번 입니다"; ?>
                     </p>
                 </div>
             </div>  
