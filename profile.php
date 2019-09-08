@@ -20,6 +20,7 @@
 
     <body>
     <?php
+        session_start();
         $id = $_SESSION['id'];
         $name = $_SESSION['name'];
         $correct = $_SESSION['correct'];
