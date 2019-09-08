@@ -16,9 +16,25 @@
 
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+body, html { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.bgimg {
+    border: 0;
+    padding: 0; 
+    background-image: url('http://www.v3wall.com/wallpaper/1920_1080/1208/1920_1080_20120820012056835903.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
     </head>
 
     <body>
+	<div class="bgimg">
             <?php
 				session_start();
 
@@ -43,7 +59,7 @@
 				<br>
 
 			<div class="container">
-				<?php echo "<h3>안녕하세요. $name 님</h3>"; ?>
+				<?php echo "<h3>안녕하세요, $name 님</h3>!"; ?>
 				<br>
 				<br>
 				<div class="row">
@@ -69,6 +85,7 @@
 		
 		<!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
+	</div>
     </body>
 
 </html> 
