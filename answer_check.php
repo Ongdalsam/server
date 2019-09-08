@@ -14,7 +14,6 @@
         $row=$result->fetch_array(MYSQLI_ASSOC);
     }*/
 
-
     if($_SESSION['prob_num']==1)
     {
         if($answer==24)
@@ -29,9 +28,7 @@
 
     }
 
-    echo "$check";
-
-    /*if($check==1)
+    if($check==1)
     {
         $_SESSION['correct'] = $_SESSION['correct'] + 1;
         $_SESSION['total'] = $_SESSION['total'] + 1;
@@ -65,5 +62,5 @@
             window.location = 'problem_list.php';
         </script>-->
         <?php
-    }*/
+    }
 ?>
