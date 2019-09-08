@@ -25,23 +25,16 @@
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
 							 <li><a href="problem_list.php">Problems</a></li>
 							 <li><a href="profile.php">Profile</a></li>
-                             <li><a href="logout.php">Logout</a></li>
                              <li><a href="ranking.php">Ranking</a></li>
+                             <li><a href="logout.php">Logout</a></li>
                     </ul>
               </div>
 		</nav>
         <div class="container">
             <?php
-            $sql1 = DBquery("
-            SELECT DISTINCT t1.id, t1.correct, t1.total count(t1.id) AS ranking
-            FROM user_info t1, user_info t2
-            WHERE t1.correct/t1.total < t2.correct/t2.total
-            OR t1.correct/t1.total = t2.correct/t2.total
-            GROUP BY t1.id
-            ORDER BY ranking
-            ");
             for($i = 0; $row1=mysql_fetch_array($sql1); $i++) {
                 echo $row1[ranking];
+                <br>
             }
             ?>
         </div>
