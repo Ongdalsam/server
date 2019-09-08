@@ -19,6 +19,11 @@
     </head>
 
     <body>
+        <?php
+
+        $_SESSION['prob_num']=1;
+
+        ?>
         <nav>
             <div class="nav-wrapper"> 
                    <a href="https://ongdalsam.herokuapp.com/index.php" class="brand-logo" style="padding-left: 20px;">Messy Math</a>
@@ -32,15 +37,24 @@
 
         <div class="container">
             <h3>1. 계단 오르기</h3>
-            <br>
             <div class="row">
                 <div class="card">
+                    <br>
                     <p>총 6개의 계단이 있다. 처음부터 시작하여 꼭대기까지 올라가는데 한 번에 한 칸, 두 칸, 또는 세 칸씩 올라갈 수 있다고 한다. 이 때 계단을 오르는 서로 다른 방법의 총 가지 수는?</p>
+                    <br>
                 </div>
             </div>
             <br>
-            <form action = "check1.php" method="POST">
-                
+            <form action = "answer_check.php" method="POST">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="number" class="validate" name="answer">
+                        <label for="last_name">Answer</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
             </form>
         </div>
 
