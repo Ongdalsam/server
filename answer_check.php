@@ -6,6 +6,14 @@
     $id = $_SESSION['id'];
     $check = 0;
 
+    /*$check="SELECT * FROM user_info WHERE id='$id'";
+    $result=$mysqli->query($check);
+
+    if($result->num_rows==1)
+    {
+        $row=$result->fetch_array(MYSQLI_ASSOC);
+    }*/
+
     if($_SESSION['prob_num']==1)
     {
         if($answer==24)
@@ -32,10 +40,10 @@
         }
 
         ?>
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
             alert('맞았습니다!');
             window.location = 'problem_list.php';
-        </script>
+        </script>-->
         <?php
     }
     else
@@ -49,10 +57,10 @@
         }
 
         ?>
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
             alert('틀렸습니다!');
             window.location = 'problem_list.php';
-        </script>
+        </script>-->
         <?php
     }
 ?>
