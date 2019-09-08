@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,7 +25,6 @@
         <?php
 
         $_SESSION['prob_num'] = 1;
-        echo "$_SESSION['prob_num']";
 
         ?>
         <nav>
