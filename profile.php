@@ -58,9 +58,17 @@
             </div>
             <div class="row">
                 <div class="card">
-                    <span class = "card-title">당신의 맞은 개수는 :</span>
+                    <span class = "card-title">당신의 맞은 횟수는 :</span>
                     <p>
                     <?php echo "$correct 입니다"; ?>
+                    </p>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="card">
+                    <span class = "card-title">당신의 총 시도 횟수는 :</span>
+                    <p>
+                    <?php echo "$total 입니다"; ?>
                     </p>
                 </div>
             </div>  
