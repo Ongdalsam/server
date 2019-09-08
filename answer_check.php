@@ -1,4 +1,6 @@
 <?php
+    echo "Hello!!!!";
+
     session_start();
     require('db.php');
 
