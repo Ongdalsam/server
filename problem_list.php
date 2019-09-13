@@ -40,30 +40,24 @@
             <?php
                 $sql = "SELECT * FROM question_info";
                 $res = mysqli_query($mysqli, $sql); 
-            ?>
-
-                <?php
+           
                     $i = 0;
                     while($row = mysqli_fetch_array($res, MYSQLI_ASSOC)){
-                        $i = $i + 1; ?>
-                        <div class="row">
-                            <div class="col s12">
-                                <div class="card">
-                                    <span class="card-title"><?php echo "$i. " .$row['name']. ; ?></span>
-                                    <div class="card-action">
-                                        <a href="problem.php"><?php 
-                                       /* $_SESSION['prob_num'] = $i;
+                        $i = $i + 1;
+                        echo "<div class=\"row\">";
+                            echo "<div class=\"col s12\">";
+                                echo "<div class=\"card\">";
+                                    echo "<span class=\"card-title\">$i. " .$row['name']. "</span>";
+                                    echo "<div class=\"card-action\">";
+                                        echo "<a href=\"problem.php\">";
+                                        $_SESSION['prob_num'] = $i;
                                         $_SESSION['prob_name'] = $row['name'];
                                         $_SESSION['prob_content'] = $row['content'];
-                                        $_SESSION['prob_answer'] = $row['answer'];*/
-                                        ?>Click!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                <?php
+                                        $_SESSION['prob_answer'] = $row['answer'];
+                                        echo "Click!</a>";
+                                    echo "</div></div></div></div>";
                     }
-                ?>
+            ?>
 
             <!--<div class="row">
                 <div class="card">
