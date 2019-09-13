@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require('db.php');
 ?>
 <!DOCTYPE html>
@@ -37,19 +38,32 @@
             <br>
 
             <?php
-                $sql = "select * from question_info";
+                $sql = "SELECT * FROM question_info";
                 $res = mysqli_query($mysqli, $sql);
             ?>
 
-            <ul id = "mainList">
                 <?php
+                    $i = 0;
                     while($row = mysqli_fetch_array($res)){
-                        echo "<a href = \"problem.php?ID=".$row['id']."\">";
-                        echo "<li><div class = \"listBox\">";
-                        echo "<div class = \"listBoxTop\"><div class = \"listBoxTitle\"><h2>".$row['id'].". ".$row['name']."</h2></div></div></div></li></a>";
+                        $i = $i + 1; ?>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card">
+                                    <span class="card-title"><?php echo "$i. .$row['name']."; ?></span>
+                                    <div class="card-action">
+                                        <a href="problem.php"><?php 
+                                        $_SESSION['prob_num'] = $i;
+                                        $_SESSION['prob_name'] = $row['name'];
+                                        $_SESSION['prob_content'] = $row['content'];
+                                        $_SESSION['prob_answer'] = $row['answer'];
+                                        ?>Click!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <?php
                     }
                 ?>
-            </ul>
 
             <!--<div class="row">
                 <div class="card">
