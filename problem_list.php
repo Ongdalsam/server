@@ -39,12 +39,12 @@
 
             <?php
                 $sql = "SELECT * FROM question_info";
-                $result=$mysqli->query($sql); 
+                $res = mysqli_query($mysqli, $sql); 
             ?>
 
                 <?php
                     $i = 0;
-                    while($row=$result->fetch_array(MYSQLI_ASSOC)){
+                    while($row = mysqli_fetch_array($res, MYSQLI_ASSOC)){
                         $i = $i + 1; ?>
                         <div class="row">
                             <div class="col s12">
