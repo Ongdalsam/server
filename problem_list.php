@@ -1,3 +1,6 @@
+<?php
+    require('db.php');
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,7 +35,23 @@
         <div class="container">
             <h3>Problems</h3>
             <br>
-            <div class="row">
+
+            <?php
+                $sql = "select * from question_info";
+                $res = mysqli_query($mysqli, $sql);
+            ?>
+
+            <ul id = "mainList">
+                <?php
+                    while($row = mysqli_fetch_array($res)){
+                        echo "<a href = \"problem.php?ID=".$row['id']."\">";
+                        echo "<li><div class = \"listBox\">";
+                        echo "<div class = \"listBoxTop\"><div class = \"listBoxTitle\"><h2>".$row['id'].". ".$row['name']."</h2></div></div></div></li></a>";
+                    }
+                ?>
+            </ul>
+
+            <!--<div class="row">
                 <div class="card">
                     <span class="card-title">1. 계단 오르기</span>
                     <div class="card-action">
@@ -55,7 +74,7 @@
                         <a href="problem3.php">Click!</a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
         <!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
