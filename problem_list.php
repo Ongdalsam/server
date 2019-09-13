@@ -43,16 +43,16 @@
             ?>
 
                 <?php
-                    $i = 0;
+                    //$i = 0;
                     while($row = mysqli_fetch_array($res)){
-                        $i = $i + 1; ?>
+                        //$i = $i + 1; ?>
                         <div class="row">
                             <div class="col s12">
                                 <div class="card">
                                     <span class="card-title"><?php echo "$i. .$row['name']."; ?></span>
                                     <div class="card-action">
                                         <a href="problem.php"><?php 
-                                        /*$_SESSION['prob_num'] = $i;
+                                       /* $_SESSION['prob_num'] = $i;
                                         $_SESSION['prob_name'] = $row['name'];
                                         $_SESSION['prob_content'] = $row['content'];
                                         $_SESSION['prob_answer'] = $row['answer'];*/
