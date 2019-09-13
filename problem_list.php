@@ -43,13 +43,13 @@
             ?>
 
                 <?php
-                    //$i = 0;
+                    $i = 0;
                     while($row=$result->fetch_array(MYSQLI_ASSOC)){
-                        //$i = $i + 1; ?>
+                        $i = $i + 1; ?>
                         <div class="row">
                             <div class="col s12">
                                 <div class="card">
-                                    <span class="card-title"><?php echo "$i. .$row['name']."; ?></span>
+                                    <span class="card-title"><?php echo "$i. " .$row['name']. ; ?></span>
                                     <div class="card-action">
                                         <a href="problem.php"><?php 
                                        /* $_SESSION['prob_num'] = $i;
