@@ -47,7 +47,7 @@
                         echo "<div class=\"row\">";
                             echo "<div class=\"col s12\">";
                                 echo "<div class=\"card\">";
-                                    echo "<span class=\"card-title\">$i. " .$row['name']. "</span>";
+                                    echo "<span class=\"card-title\"> $i. " .$row['name']. "</span>";
                                     echo "<div class=\"card-action\">";
                                         echo "<a href=\"problem.php\">";
                                         $_SESSION['prob_num'] = $i;
@@ -58,31 +58,6 @@
                                     echo "</div></div></div></div>";
                     }
             ?>
-
-            <!--<div class="row">
-                <div class="card">
-                    <span class="card-title">1. 계단 오르기</span>
-                    <div class="card-action">
-                        <a href="problem1.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">2. 원 문제</span>
-                    <div class="card-action">
-                        <a href="problem2.php">Click!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <span class="card-title">3. 속력 문제</span>
-                    <div class="card-action">
-                        <a href="problem3.php">Click!</a>
-                    </div>
-                </div>
-            </div>-->
         </div>
         <!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
