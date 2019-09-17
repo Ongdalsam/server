@@ -6,18 +6,9 @@
     $id = $_SESSION['id'];
     $check = 0;
 
-    if($_SESSION['prob_num']==1)
+    if($answer == $_SESSION['prob_answer'])
     {
-        if($answer==24)
-            $check = 1;
-    }
-    else if($_SESSION['prob_num']==2)
-    {
-    
-    }
-    else if($_SESSION['prob_num']==3)
-    {
-
+        $check = 1;
     }
 
     if($check==1)
