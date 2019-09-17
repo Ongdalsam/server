@@ -32,7 +32,6 @@
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
 							 <li><a href="problem_list.php">Problems</a></li>
 							 <li><a href="profile.php">Profile</a></li>
-                             <li><a href="ranking.php">Ranking</a></li>
                              <li><a href="logout.php">Logout</a></li>
                     </ul>
               </div>
