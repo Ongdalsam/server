@@ -43,15 +43,20 @@
            
                     $i = 0;
                     while($row = mysqli_fetch_array($res, MYSQLI_ASSOC)){
+                        echo "<form method=\"POST\" action=\"problem.php\">";
                         $i = $i + 1;
                         echo "<div class=\"row\">";
                             echo "<div class=\"col s12\">";
                                 echo "<div class=\"card\">";
                                     echo "<span class=\"card-title\"> $i. " .$row['name']. "</span>";
-                                    echo "<div class=\"card-action\">";
-                                        echo "<a href=\"problem.php?problemID=".$row['id']."\">";
-                                        echo "Click!</a>";
-                                    echo "</div></div></div></div>";
+                                    echo "<div class=\"card-content\">";
+                                        echo "<p>  버튼을 눌러주세요: </p>";
+                                        echo "<input type=\"number\" name=\"id\" value=".$row['id'].">";
+                                        echo "<p>      </p>";
+                                        echo "<button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Click!
+                                            <i class=\"material-icons right\">send</i>
+                                            </button>";
+                                    echo "</div></div></div></div></form>";
                     }
             ?>
         </div>

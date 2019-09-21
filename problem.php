@@ -23,8 +23,9 @@
     </head>
 
     <body>
-        <?php        
-            $sql = "SELECT * from question_info where id = ".$_GET['id'];
+        <?php
+            $id = $_POST['id'];        
+            $sql = "SELECT * FROM question_info WHERE id = '$id'";
             $res = mysqli_query($mysqli, $sql);
             $row = mysqli_fetch_array($res);
 
