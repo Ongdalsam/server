@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require('db.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,9 +24,13 @@
 
     <body>
         <?php        
-            $num = $_SESSION['prob_num'];
-            $name = $_SESSION['prob_name'];
-            $content = $_SESSION['prob_content'];
+            $sql = "SELECT * from question_info where id = ".$_GET['id'];
+            $res = mysqli_query($mysqli, $sql);
+            $row = mysqli_fetch_array($res);
+
+            $name = $row['name'];
+            $content = $row['content'];
+            $_SESSION['prob_answer'] = $row['answer'];
         ?>
 
         <nav>
@@ -41,7 +46,7 @@
 
         <div class="container">
 
-            <h3><?php echo "$num. $name"; ?></h3>
+            <h3><?php echo "$name"; ?></h3>
             <div class="row">
                 <div class="card">
                     <br>

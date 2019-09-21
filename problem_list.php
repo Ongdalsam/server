@@ -49,11 +49,7 @@
                                 echo "<div class=\"card\">";
                                     echo "<span class=\"card-title\"> $i. " .$row['name']. "</span>";
                                     echo "<div class=\"card-action\">";
-                                        echo "<a href=\"problem.php\">";
-                                        $_SESSION['prob_num'] = $i;
-                                        $_SESSION['prob_name'] = $row['name'];
-                                        $_SESSION['prob_content'] = $row['content'];
-                                        $_SESSION['prob_answer'] = $row['answer'];
+                                        echo "<a href=\"problem.php?problemID=".$row['id']."\">";
                                         echo "Click!</a>";
                                     echo "</div></div></div></div>";
                     }
