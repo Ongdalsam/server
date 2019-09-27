@@ -50,8 +50,8 @@
                                 echo "<div class=\"card\">";
                                     echo "<span class=\"card-title\"> $i. " .$row['name']. "</span>";
                                     echo "<div class=\"card-content\">";
-                                        echo "<p>  버튼을 눌러주세요: </p>";
-                                        echo "<input type=\"number\" name=\"id\" value=".$row['id'].">";
+                                        echo "<p>  Click!을 눌러주세요: </p>";
+                                        echo "<input type=\"number\" name=\"id\" value=\"$i\">";
                                         echo "<p>      </p>";
                                         echo "<button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Click!
                                             <i class=\"material-icons right\">send</i>

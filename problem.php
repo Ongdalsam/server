@@ -47,7 +47,7 @@
 
         <div class="container">
 
-            <h3><?php echo "$name"; ?></h3>
+            <h3><?php echo "$id. $name"; ?></h3>
             <div class="row">
                 <div class="card">
                     <br>
